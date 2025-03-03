@@ -1,6 +1,6 @@
 <?php
-$nome = "Walter";
-$venda = 1000;
+$nome = "Memphis";
+$venda = 1900;
 $valorf;
 $bonus;
 
@@ -20,11 +20,11 @@ if ($venda <= 1000) {
 ;
 
 echo "
-Vendedor: $nome \n
-############################## \n
-Total de Vendas: $venda \n
-Valor do Bônus: $bonus \n
-Total a Receber: $valorf \n
+Vendedor: $nome </br>
+############################## </br>
+Total de Vendas: $venda </br>
+Valor do Bônus: $bonus </br>
+Total a Receber: $valorf </br>
 ##############################
 ";
 ?>

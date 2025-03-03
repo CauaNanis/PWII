@@ -1,5 +1,5 @@
 <?php
-    $aluno = "Huggler Baleia";
+    $aluno = "Cauã";
     $professor = "Diogo";
 
     echo "<marquee>";
