@@ -17,4 +17,4 @@
 
     echo '<h1>O nome é: ' . $lista_pessoas[0]['nome'] . '</h1>';
 
-?>
+?> 
