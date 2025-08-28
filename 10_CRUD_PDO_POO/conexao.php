@@ -4,7 +4,7 @@
     $host = 'localhost';
     $database = 'sistema_ebooks';
     $user = 'root';
-    $password = '';
+    $password = '123456';
 
     // Realizando conexão com o BD por meio
     //do plugin PHP PDO

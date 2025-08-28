@@ -1,13 +1,14 @@
 <?php include 'header.php'; ?>
+<?php include 'usuario.php'; ?>
 
     <div class="container-fluid">
         <div class="row d-flex justify-content-center">
             <div class="col-sm-12 col-md-8 col-xl-6 col-xxl-4">
 
                 <div class="card bg-light shadow my-5">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNTlby9vVYoB8sQk-h9WQ_JXA_YkqTmPuU3Q&s" class="card-img-top">
+                    <img src="https://i.redd.it/4z51kxu0mzqd1.png" class="card-img-top">
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form action="./cadastro_usuario.php" method="post">
                             <div class="mb-3">
                                 <label for="nome" class="label-control">Nome Completo</label>
                                 <input type="text" name="nome" id="nome" class="form-control">
@@ -39,5 +40,22 @@
             </div>
         </div>
     </div>
+
+    <?php
+        if (!isset($_POST['nome'])) 
+            exit();
+
+        if (!isset($_POST['email'])) 
+            exit();
+
+        if (!isset($_POST['senha'])) 
+            exit();
+
+        if (!isset($_POST['confirmar_senha'])) 
+            exit();
+        
+        $usuario = new Usuario('', '', '', '');
+        $usuario->inserir($_POST['nome'], $_POST['email'], $_POST['senha'], $_POST['confirmar_senha'], 'comum');
+    ?>
 
 <?php include 'footer.php'; ?>
